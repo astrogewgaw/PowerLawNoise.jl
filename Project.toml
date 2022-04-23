@@ -1,7 +1,11 @@
 name = "Noisy"
-uuid = "9abb9eec-80c7-4a18-accd-d591357fead6"
-authors = ["Ujjwal Panda <ujjwalpanda97@gmail.com> and contributors"]
 version = "0.0.1"
+uuid = "9abb9eec-80c7-4a18-accd-d591357fead6"
+authors = ["Ujjwal Panda <ujjwalpanda97@gmail.com>"]
+
+[deps]
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
 [compat]
 julia = "1.7"
