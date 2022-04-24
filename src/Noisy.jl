@@ -23,7 +23,7 @@ function σ(A, nf, nt)
     2 * √Σ / nt
 end
 
-function noise!(X, A, f, f₀, nt, β)
+function noise!(X, A, nt)
     x = randn(Float64, size(X)...)
     y = randn(Float64, size(X)...)
     (nt % 2) == 0 && zerolast!(y)
@@ -41,7 +41,7 @@ function noise(β, f₀, dims...)
     X = Array{ComplexF64}(undef, dims[1:end-1]..., size(f, 1))
     A = similar(f)
     scale!(A, f, f₀, β)
-    noise!(X, A, f, f₀, nt, β)
+    noise!(X, A, nt)
 end
 
 """
