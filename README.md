@@ -23,7 +23,11 @@ dimensions and arbitrary exponents. An exponent of 0, 1 and 2 corresponds to
 white, pink and red noise. The figure below demonstrates the difference between
 them, by plotting the resultant time series, generated via `Noisy.jl`:
 
-![Plot](./noisy.png)
+![Plot: 1D Noise](./noisy.png)
+
+Here is another one, but this time we are simulating noise in two dimensions:
+
+![Plot: 2D Noise](./noisy2d.png)
 
 </div>
 </div>
