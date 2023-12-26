@@ -1,6 +1,4 @@
-module Noisy
-
-export noisy
+module PowerLawNoise
 
 using FFTW
 using Random
@@ -26,7 +24,7 @@ function scales(ν, ν₀, β)
     scales!(A, ν, ν₀, β)
 end
 
-function noisy(β, ν₀, dims...)
+function noise(β, ν₀, dims...)
     n₀ = dims[end]
     ν = rfftfreq(n₀)
     ν₀ = 0 <= ν₀ <= 0.5 ? max(ν₀, n₀^-1) : throw("ν₀ ∉ [0, 0.5].")
