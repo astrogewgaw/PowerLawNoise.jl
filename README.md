@@ -1,5 +1,7 @@
 <div align="center">
-<h2><code>PowerLawNoise</code></h2>
+<h1><code>PowerLawNoise</code></h1>
+<h4><i>Generate power law noise, in Julia.</i></h4>
+<br/>
 
 ![License][license]
 ![GitHub Stars][stars]
